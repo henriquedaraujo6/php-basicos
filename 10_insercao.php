@@ -40,15 +40,13 @@
         }
 
         // Insere o Registro no banco de dados
-        $sql = "INSERT INTO clientes, (nome, email) VALUES ('$nome','$email')";
+        $sql = "INSERT INTO clientes (nome, email) VALUES ('$nome','$email')";
 
-        echo var_dump($conn);
-        echo "<br>";
-        echo var_dump($sql);
+        
 
         if ($conn->query($sql) === TRUE) {
              echo "<p style = 'color:Darkgreen;'> Cliente cadastrado com sucesso.</p>";
-             echo "chegou aqui";
+              
         } else {
            echo "<p style = 'color:Red;'> Erro ao cadastrar.</p>";
         
