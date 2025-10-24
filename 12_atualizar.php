@@ -22,7 +22,7 @@ $cliente = null;
 // Verifica se um ID foi passado via URL para edição
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $sql = "SELECT * FROM clientes WHERE id='$is'";
+    $sql = "SELECT * FROM clientes WHERE id='$id'";
     $result = $conn->query($sql);
 
     // Verifica se encontrou um registro no banco de dados
